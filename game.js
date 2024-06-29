@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameContainer = document.getElementById('gameContainer');
     const scoreDisplay = document.getElementById('score');
     const openingSlideshow = document.getElementById('openingSlideshow');
+    const openingVideo = document.getElementById('openingVideo');
     const endingVideo = document.getElementById('endingVideo');
     const endMessage = document.getElementById('endMessage');
     const backgroundMusic = document.getElementById('backgroundMusic');
@@ -27,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
     startGameButton.addEventListener('click', () => {
         startGameButton.style.display = 'none';
         openingSlideshow.style.display = 'block';
-        openingSlideshow.querySelector('video').play();
+        openingVideo.play();
 
-        openingSlideshow.querySelector('video').addEventListener('ended', startGame, { once: true });
+        openingVideo.addEventListener('ended', startGame, { once: true });
     });
 
     restartGameButton.addEventListener('click', () => {
