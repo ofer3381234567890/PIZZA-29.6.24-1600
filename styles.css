@@ -22,12 +22,6 @@ body, html {
     }
 }
 
-@media (max-width: 768px) and (orientation: portrait) {
-    body, html {
-        background-image: url('9bk.png');
-    }
-}
-
 #gameContainer {
     position: absolute;
     top: 0;
@@ -93,7 +87,7 @@ body, html {
 }
 
 #restartGameButton {
-    top: 20px;
+    top: 75vh; /* 3/4 screen height */
     left: 50%;
     transform: translateX(-50%);
     display: none;
