@@ -22,6 +22,12 @@ body, html {
     }
 }
 
+@media (max-width: 768px) and (orientation: portrait) {
+    body, html {
+        background-image: url('9bk.png');
+    }
+}
+
 #gameContainer {
     position: absolute;
     top: 0;
