@@ -14,6 +14,10 @@ body, html {
     body, html {
         background-image: url('9bk.png');
     }
+
+    #openingSlideshow video, #endingVideo {
+        object-fit: contain;
+    }
 }
 
 @media (min-aspect-ratio: 16/9) {
