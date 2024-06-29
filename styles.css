@@ -15,7 +15,7 @@ body, html {
         background-image: url('9bk.png');
     }
 
-    #openingSlideshow video, #endingVideo {
+    #openingSlideshow video {
         object-fit: contain;
     }
 }
