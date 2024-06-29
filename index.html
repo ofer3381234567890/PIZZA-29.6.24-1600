@@ -17,22 +17,17 @@
             width: 100%;
         }
 
-        /* קובץ רקע לטלפונים ביחס רוחב:גובה 9:16 */
         @media (max-aspect-ratio: 9/16) {
             body, html {
-                background-image: url('9bk.png');
+                background-image: url('9_16bk.png');
             }
         }
 
-        /* קובץ רקע למחשבים ביחס רוחב:גובה 16:9 */
         @media (min-aspect-ratio: 16/9) {
             body, html {
-                background-image: url('16bk.png');
+                background-image: url('16_9bk.png');
             }
         }
-
-        /* סגנונות נוספים כפי שהיו */
-        /* ניתן להוסיף כאן סגנונות נוספים שלך */
 
         #gameContainer {
             position: absolute;
@@ -99,7 +94,7 @@
         }
 
         #restartGameButton {
-            top: 20px;
+            top: 75vh; /* 3/4 screen height */
             left: 50%;
             transform: translateX(-50%);
             display: none;
